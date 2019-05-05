@@ -3,18 +3,18 @@
 
 <link rel = "stylesheet"
    type = "text/css"
-   href = "styles.css" />
+   href = "styles.css?v=1" />
    
 <!-- Me --> 
 <div class="mainpage_container" style="float: right;" 
 	onmouseenter="slideshow('me')" onmouseleave="unanimate('me')">
-	<a href="about.html"> 
+	<a href="about"> 
 		<div class="disappear_on_hover">
-			<img src="me_1.png">
+			<img src="assets/me_1.png">
 		</div>
 		<div class="mainpage_overlay">
 			<div class="mainpage_image">
-				<img id="me_ani" src="me_2.png">
+				<img id="me_ani" src="assets/me_2.png">
 			</div>
 		</div>
 	</a>
@@ -29,13 +29,13 @@
 
 <!-- Research -->
 <div class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
-	<a href="research.html">
+	<a href="research">
 		<div class="disappear_on_hover">
-			<img  src="research_1.png">
+			<img  src="assets/research_1.png">
 		</div>
 		<div class="mainpage_overlay">
 			<div class="mainpage_image">
-				<img id="research_ani" src="research_2.png">
+				<img id="research_ani" src="assets/research_2.png">
 			</div>
 		</div>
 	</a>
@@ -43,13 +43,13 @@
 
 <!-- Portfolio -->
 <div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
-	<a href="portfolio.html">
+	<a href="portfolio">
 		<div class="disappear_on_hover">
-			<img  src="portfolio_1.png"> 
+			<img  src="assets/portfolio_1.png"> 
 		</div>
 		<div class="mainpage_overlay">
 			<div class="mainpage_image">
-				<img id="portfolio_ani" src="portfolio_2.png">
+				<img id="portfolio_ani" src="assets/portfolio_2.png">
 			</div>
 		</div> 
 	</a>
@@ -94,7 +94,7 @@ function run_animation(img){
 		if (animation_indices[img] > 5){
 			animation_indices[img] = 1;
 		}
-		image.src = img + "_" + animation_indices[img] + ".png";
+		image.src = "assets/" + img + "_" + animation_indices[img] + ".png";
 		if (animation_indices[img] == 4) {
 			setTimeout(run_animation, 500, img);
 		}
@@ -109,7 +109,7 @@ function slideshow(img){
 	  animate_bools[img] = true;
 	  animation_indices[img] = 1;
 	  var image = document.getElementById(img + "_ani");
-	  image.src = img + "_" + animation_indices[img] + ".png";
+	  image.src = "assets/" + img + "_" + animation_indices[img] + ".png";
 	  setTimeout(run_animation, 50, img);
 	}
 }
@@ -134,11 +134,11 @@ function unanimate(img){
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <a href="https://twitter.com/joshaaronmiller?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @joshaaronmiller</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="50" height="50" src="linkedin.png" alt="LinkedIn"></a>
+<a href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="50" height="50" src="assets/linkedin.png" alt="LinkedIn"></a>
 <br>
 <b>email</b>: last name dot first name, husky.neu.edu
 <br>
-<a href="credits.html">Credits</a>
+<a href="credits">Credits</a>
 </html>
 
 

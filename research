@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css?v=1" />
+
+<div class="padding">
+	<a href="http://joshaaronmiller.com">Home</a>
+	<br>
+	<h1>Research</h1>
+	<br>
+	<h3> Ongoing projects </h3>
+	<ul>
+	<li> Player Strategy Imitation, best described by <a href="https://npc.codes/projects/strategyimitation/">my colleague</a></li>
+	<li> <a href="https://fold.it/portal/">Foldit</a> research and development, including projects on playability, game-user interaction, and onboarding </li>
+	</ul>
+	<br><br>
+	<h3> Publications </h3>
+	<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6319931/">Horn, B.; Miller, J.; Smith, G.; and Cooper C. 2018. A Monte Carlo Approach to Skill-Based Automated Playtesting. In AIIDE.</a>
+	<br><br>
+	<h4> Presentations </h4>
+	<a href="assets/BFIG2019.html">Learning and Motivation: Designing the On-Ramp of Your Game, BostonFIG Learns, Feb 2019</a> (An interactive experience!)
+	<br><br>
+	<h4> Unpublished Posters </h4>
+	<br><br>
+	<ul>
+	<li>(Presented at RosettaCon by co-author Uttkarsh Narayan) Applying Learning and Motivation Frameworks to Citizen Science Games in Practice and Theory, 2018</li>
+	<li>(Presented at Colgate University) Acronyms and Word Frequency Affect Readers Differently, 2017</li>
+	<li>The Effects of One Hour Sleep Loss in School-Aged Children: An Event-Related Potentials Study, 2016</li>
+	<li>Microgravity Exacerbates Sleep Restriction Impairment On Cognitive Function, 2016</li>
+	</ul>
+</div>
+
+</html>

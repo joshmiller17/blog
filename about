@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css?v=1" />
+
+<div class="padding">
+	<a href="http://joshaaronmiller.com">Home</a>
+	<br><br>
+	<div id='two_column' style="margin-left: 0;"> <img src="assets/JugglingJosh.jpg" alt="(Picture of Josh at a Renaissance Faire holding a mandolin and juggling)">
+	</div>
+	<h2> About Me </h2>
+	Josh Miller is a PhD student studying game-user interaction and games with a purpose at Northeastern University's College of Computer and Information Science, mentored by Professors Seth Cooper and Magy Seif El-Nasr. Josh's research focuses on synthesizing game design principles with the psychology of learning and motivation to create seamless and engaging user experiences in non-game contexts. He is interested in creating playful, flow-state experiences for educational contexts. Josh earned his bachelor's degree in computer science and neuroscience from Colgate University in New York.
+<br>
+<br>
+<b>Education</b>: BA, Computer Science and Neuroscience, Colgate University
+<br>
+<b>Hometown</b>: Hamilton, New Jersey
+<br>
+<b>Field of Study</b>: Game user research, Games with a purpose
+<br>
+<b>PhD Advisors</b>: Magy Seif El-Nasr and Seth Cooper
+<br>
+<b>Hobbies</b>: Juggling, learning mandolin and ukelele, playing games of all kinds
+<br>
+<b>Favorite game genre</b>: <a href="https://www.youtube.com/watch?v=zsC37YyPHd0">Lifestyle games</a>
+<br>
+<b>Games I'm playing currently</b>: Slay the Spire, Final Fantasy XIV
+<br>
+<b>Favorite games</b> (in no particular order): Ocarina of Time, Overwatch, Hanabi, Don't Starve Together, Dominion
+Check out the full(ish) list of <a href="blog">games I've played enough to have design thoughts on</a>.
+<br>
+<br>
+<br>
+<b>What are the specifics of your graduate education (thus far)?</b><br>
+My research so far has focused on improving the tutorial of Foldit, the protein-folding puzzle game. By grounding the design in Self-Determination Theory and Cognitive Load Theory, I am able to craft a more intuitive experience for new players.
+<br><br>
+<b>What are your research interests?</b><br>
+I am interested in game-user interaction, games with a purpose, game design, and the psychology of learning and motivation. Together, these interests become the discovery of playful elements of non-game contexts. I also focus on minimizing cognitive load while maximizing engagement and retention, by synthesizing grounded theories and industry practices and principles.
+<br><br>
+<b>What's one problem you'd like to solve with your research/work?</b><br>
+Using games as a tool for formal and informal learning is currently an unsolved problem. How do learning and play relate? What is the core experience of discovering new things, and can we build a game or interface around that to enable players to explore new topics in an enjoyable and casual way? This work could unlock new questions into how we understand education, intrinsic motivation, play-ability, and playfulness.
+<br><br>
+<b>What aspect of what you do is most interesting?</b><br>
+Games are one of the newest forms of art, and one of the only forms that are interactive. They are so nascent that no one has realized their full potential as a set of tools which enable problem-solving and human expression from a unique perspective. Truly, this field is the research of playful problem-solving, and it is so enjoyable to be a part of it.
+<br><br>
+<b>What are your research or career goals, going forward?</b><br>
+I hope to design an approach to the ludification of research itself by enabling players to play with the core experience of discovering the universe in a safe environment. More concretely, this platform would allow users to read primary source journal articles in a way that is engaging and easy to understand.
+<br>
+</div>
+
+</html>
