@@ -1,59 +1,144 @@
-<html xmlns="http://www.w3.org/1999/xhtml lang="en-US">
+<!DOCTYPE html>
+<html lang = "en-US">
 
-<!-- TODO 
-	set favicon 
--->
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
+   
+<!-- Me --> 
+<div class="mainpage_container" style="float: right;" 
+	onmouseenter="slideshow('me')" onmouseleave="unanimate('me')">
+	<a href="about.html"> 
+		<div class="disappear_on_hover">
+			<img src="me_1.png">
+		</div>
+		<div class="mainpage_overlay">
+			<div class="mainpage_image">
+				<img id="me_ani" src="me_2.png">
+			</div>
+		</div>
+	</a>
+</div> 
 
 
-<head>
-    <title>Josh Aaron Miller</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <style>
-    h1 {
-        top: auto;
-        height:200px;
-        width:auto;
-        font-family: Raleway;
-        font-weight: bolder;
-		text-align: center;
-        position: relative;
-		animation: title-float 1.8s infinite ease-in-out;
-    }
-	h2 {
-        top: 200px;
-        height:auto;
-        width:auto;
-        font-family: Raleway;
-		text-align: center;
-        position: relative;
-		animation-delay: -1s;
-		animation: shake 3.0s 1;
-		
+<div class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
+	<h1 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Josh Aaron Miller </h1>
+	<h3 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h3>
+	Please pardon the appearance, I'm still setting up.
+	
+
+<!-- Research -->
+<div class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
+	<a href="research.html">
+		<div class="disappear_on_hover">
+			<img  src="research_1.png">
+		</div>
+		<div class="mainpage_overlay">
+			<div class="mainpage_image">
+				<img id="research_ani" src="research_2.png">
+			</div>
+		</div>
+	</a>
+</div>
+
+<!-- Portfolio -->
+<div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
+	<a href="portfolio.html">
+		<div class="disappear_on_hover">
+			<img  src="portfolio_1.png"> 
+		</div>
+		<div class="mainpage_overlay">
+			<div class="mainpage_image">
+				<img id="portfolio_ani" src="portfolio_2.png">
+			</div>
+		</div> 
+	</a>
+</div>
+
+
+
+
+
+</div><script>
+var animation_indices = {};
+animation_indices['research'] = 1;
+animation_indices['me'] = 1;
+animation_indices['portfolio'] = 1;
+animation_indices['contact'] = 1;
+
+animate_bools = {};
+animate_bools['research'] = false;
+animate_bools['me'] = false;
+animate_bools['portfolio'] = false;
+animate_bools['contact'] = false;
+
+/* Wrap around when image doesn't load */
+function anim_loop(img) {
+}
+
+function run_animation(img){
+
+	/* This block fixes the bug where multiple timeouts get called for some reason */
+	var id = window.setTimeout(function() {}, 0);
+	while (id--) {
+		window.clearTimeout(id);
 	}
+  
+	if (animate_bools[img]){
+		var image = document.getElementById(img + "_ani");
+		if (image == null) { /* We probably switched pages */
+		   unanimate(img);
+		   return;
+		}
+		animation_indices[img] += 1;
+		if (animation_indices[img] > 5){
+			animation_indices[img] = 1;
+		}
+		image.src = img + "_" + animation_indices[img] + ".png";
+		if (animation_indices[img] == 4) {
+			setTimeout(run_animation, 500, img);
+		}
+		else {
+			setTimeout(run_animation, 200, img);
+		}
+	}
+}
 
-    @keyframes title-float {
-      0% {top:60px; font-size: 300%;}
-      50% {top:20px; font-size: 320%}
-      100% {top:60px; font-size: 300%}
-    }
-	
-	@keyframes shake {
-    80% { transform: translate(1px, 1px) rotate(0deg);font-size: 150%;}
-    82% { transform: translate(-1px, -2px) rotate(-1deg);}
-    88% { transform: translate(-3px, 0px) rotate(1deg);font-size: 200%;}
-    92% { transform: translate(3px, 2px) rotate(0deg); }
-    96% { transform: translate(1px, -1px) rotate(1deg); }
-	100% { transform: translate(-1px, 0px) rotate(-1deg); }
-    }
-	
-    </style>
+function slideshow(img){
+	if (!animate_bools[img]) {
+	  animate_bools[img] = true;
+	  animation_indices[img] = 1;
+	  var image = document.getElementById(img + "_ani");
+	  image.src = img + "_" + animation_indices[img] + ".png";
+	  setTimeout(run_animation, 50, img);
+	}
+}
+
+function unanimate(img){
+	animate_bools[img] = false;
+	animation_indices[img] = 1;
+}
 
 
-</head>
-<body>
-  <div>
-    <h1 id="title">Josh Aaron Miller</h1>
-  </div>
-     <h2 id="who">Who are you?</h2> 
-</body>
+//var click = new Audio('https://freesound.org/data/previews/172/172490_3192597-lq.mp3');
+//var click = new Audio('click.mp3');
+//var rollover = new Audio('rollover.wav');
+
+//$('.sound').click( () => click.play() );
+//$('.sound').onmouseover( () => rollover.play() );
+
+
+
+
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="https://twitter.com/joshaaronmiller?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @joshaaronmiller</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="50" height="50" src="linkedin.png" alt="LinkedIn"></a>
+<br>
+<b>email</b>: last name dot first name, husky.neu.edu
+<br>
+<a href="credits.html">Credits</a>
 </html>
+
+
