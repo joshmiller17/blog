@@ -6,7 +6,7 @@
    type = "text/css"
    href = "styles.css?v=5" />
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
    
 <title>Josh Aaron Miller | Home </title>
@@ -26,14 +26,14 @@
 </div> 
 
 
-<div id="scene" class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
+<div class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
 	<h1 style="font-family:SketchTitle; width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Josh Aaron Miller </h1>
 	<h2 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
 	Please pardon the appearance, I'm still setting up.
 	
 
 <!-- Research -->
-<div data-depth="0.5" class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
+<div class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
 	<a href="research">
 		<div class="disappear_on_hover">
 			<img  src="assets/research_1.png">
@@ -47,7 +47,7 @@
 </div>
 
 <!-- Portfolio -->
-<div data-depth="0.2" class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
+<div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
 	<a href="portfolio">
 		<div class="disappear_on_hover">
 			<img  src="assets/portfolio_1.png"> 
@@ -78,8 +78,9 @@ animate_bools['portfolio'] = false;
 animate_bools['contact'] = false;
 
 /* Init Parallax */
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+//var scene = document.getElementById('scene');
+//var parallaxInstance = new Parallax(scene);
+// set data depth for objs, e.g. data-depth="0.2"
 
 /* Wrap around when image doesn't load */
 function anim_loop(img) {
