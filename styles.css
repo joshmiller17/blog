@@ -31,6 +31,11 @@ h1 {
   src: url("fonts/sketchy/sketchy.ttf");
 }
 
+@font-face {
+  font-family: SketchBlock;
+  src: url("fonts/sketch_block/Sketch_Block.ttf");
+}
+
 #two_column {
     width:50%;
     margin-right:2%;
@@ -148,7 +153,10 @@ body {
 }
 
 a {
+  font-family: SketchBlock, Garamond, Palatino, Georgia;
   color: #3C54B9;
+  background-color: #C0C0C0;
+  border-radius: 15px 30px;
 }
 
 a.visited {
