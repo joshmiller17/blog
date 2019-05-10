@@ -115,6 +115,11 @@ function run_animation(img){
 }
 
 function slideshow(img){
+	//TEMP ONLY
+	if (img != 'research'){
+		return;
+	}
+	
 	if (!animate_bools[img]) {
 	  animate_bools[img] = true;
 	  animation_indices[img] = 1;
