@@ -27,11 +27,29 @@
 
 
 <div class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
-	<h1 style="font-family:SketchTitle; width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Josh Aaron Miller </h1>
+	<h1 class="maintitle"> Josh Aaron Miller </h1>
 	<h2 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
 	Please pardon the appearance, I'm still setting up.
 	
+	<br><br>
 
+	
+	<!-- Portfolio -->
+<div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
+	<a href="portfolio">
+		<div class="disappear_on_hover">
+			<img  src="assets/portfolio_1.png"> 
+		</div>
+		<div class="mainpage_overlay">
+			<div class="mainpage_image">
+				<img id="portfolio_ani" src="assets/portfolio_2.png">
+			</div>
+		</div> 
+	</a>
+</div>
+	
+	
+	
 <!-- Research -->
 <div class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
 	<a href="research">
@@ -46,22 +64,21 @@
 	</a>
 </div>
 
-<!-- Portfolio -->
-<div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
-	<a href="portfolio">
-		<div class="disappear_on_hover">
-			<img  src="assets/portfolio_1.png"> 
-		</div>
-		<div class="mainpage_overlay">
-			<div class="mainpage_image">
-				<img id="portfolio_ani" src="assets/portfolio_2.png">
-			</div>
-		</div> 
-	</a>
-</div>
 
 
 
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+<a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="64" height="64" src="assets/twitter.png" alt="Twitter"></a>
+<a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="64" height="64" src="assets/linkedin.png" alt="LinkedIn"></a>
+<a style="  background-color:transparent;" href="https://github.com/joshmiller17/"><img width="64" height="64" src="assets/github.png" alt="GitHub"></a>
+
+<br>
+<b>email</b>: last name dot first name, husky.neu.edu
+<br>
+<a class="bubblelink" href="credits">Credits</a>
 
 
 </div><script>
@@ -115,6 +132,11 @@ function run_animation(img){
 }
 
 function slideshow(img){
+	//TEMP ONLY
+	if (img != 'research'){
+		return;
+	}
+	
 	if (!animate_bools[img]) {
 	  animate_bools[img] = true;
 	  animation_indices[img] = 1;
@@ -141,17 +163,6 @@ function unanimate(img){
 
 
 </script>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="64" height="64" src="assets/twitter.png" alt="Twitter"></a>
-<a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="64" height="64" src="assets/linkedin.png" alt="LinkedIn"></a>
-<a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="64" height="64" src="assets/github.png" alt="GitHub"></a>
-
-<br>
-<b>email</b>: last name dot first name, husky.neu.edu
-<br>
-<a class="bubblelink" href="credits">Credits</a>
 </html>
 
 
