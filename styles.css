@@ -146,6 +146,7 @@ h2 {
 .mainpage_container:hover .disappear_on_hover {
   opacity: 0;
   transition: .2s ease-in-out;
+  cursor: pointer;
 }
 
 .mainpage_container:hover .mainpage_overlay {
@@ -175,7 +176,9 @@ body {
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
   background-color: white;
-  background-image:url("assets/main_background.jpg");
+  background-image:url("assets/website_tile.png");
+  background-repeat: repeat;
+  /*background-image:url("assets/main_background.jpg");*/
   background-size:cover;
   color: Black;
   width: 100%;
