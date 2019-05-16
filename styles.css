@@ -175,8 +175,10 @@ h2 {
   left: calc(50% - 10rem);
   width: 20rem;
   height: 20rem;
-  background: white url("assets/website_tile.png") 25px 25px repeat fixed;
+  background: white url("assets/main_background.jpg") fixed;
   border-radius: 50%;
+  /*box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);*/
+  -webkit-mask-image:radial-gradient(circle at center, rgba(0,0,0,1) 0, rgba(0,0,0,.4) 50%, rgba(0,0,0,0) 100%);
 }
 
 body {
@@ -186,7 +188,7 @@ body {
   background:    -moz-linear-gradient(#D0D7F3, #7084D2);
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
-  background-image:url("assets/main_background.jpg");
+  background: white url("assets/website_tile.png") 25px 25px repeat fixed;
   color: Black;
   width: 100%;
   font-size: 130%;
