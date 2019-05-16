@@ -168,6 +168,17 @@ h2 {
   /*background-color: #008CBA;*/
 }
 
+.magic {
+  z-index: -1;
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 20rem;
+  height: 20rem;
+  background: white url("assets/website_tile.png") 25px 25px repeat fixed;
+  border-radius: 50%;
+}
+
 body {
   /*
   background-color: #DOD7F3; // Sky blue
@@ -175,11 +186,7 @@ body {
   background:    -moz-linear-gradient(#D0D7F3, #7084D2);
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
-  background-color: white;
-  background-image:url("assets/website_tile.png");
-  background-repeat: repeat;
-  /*background-image:url("assets/main_background.jpg");*/
-  background-size:cover;
+  background-image:url("assets/main_background.jpg");
   color: Black;
   width: 100%;
   font-size: 130%;

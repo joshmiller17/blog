@@ -4,11 +4,14 @@
 
 <link rel = "stylesheet"
    type = "text/css"
-   href = "styles.css?v=8" />
+   href = "styles.css?v=13" />
    
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
 
-   
+<div style="z-index: 2;">
+<div class="magic"></div> 
 <title>Josh Aaron Miller | Home </title>
 <!-- Me --> 
 <div class="mainpage_container" style="float: right;" 
@@ -151,6 +154,15 @@ function unanimate(img){
 	animation_indices[img] = 1;
 }
 
+/* Background reveal by https://codepen.io/suez/pen/PwKZwO */
+$(document).ready(function() {
+  var $magic = $(".magic"),
+      magicWHalf = $magic.width() / 2;
+  $(document).on("mousemove", function(e) {
+    $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
+  });
+});
+
 
 //var click = new Audio('https://freesound.org/data/previews/172/172490_3192597-lq.mp3');
 //var click = new Audio('click.mp3');
@@ -163,6 +175,7 @@ function unanimate(img){
 
 
 </script>
+</div>
 </html>
 
 
