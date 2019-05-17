@@ -20,7 +20,7 @@ h2 {
 @media screen and (max-width: 1300px) {
 
 	.maintitle {
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 }
 
@@ -103,7 +103,7 @@ h2 {
 }
 
 .maintitle {
-	font-size: 5em;
+	font-size: 3.7em;
 	font-family:SketchTitle;
 	width:75%;
 	margin-top: 0px;
@@ -175,7 +175,8 @@ h2 {
   left: calc(50% - 10rem);
   width: 20rem;
   height: 20rem;
-  background: white url("assets/main_background.jpg") fixed;
+  /*background: white url("assets/main_background.jpg") fixed;*/
+  display: none;
   border-radius: 50%;
   /*box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);*/
   -webkit-mask-image:radial-gradient(circle at center, rgba(0,0,0,1) 0, rgba(0,0,0,.4) 50%, rgba(0,0,0,0) 100%);
