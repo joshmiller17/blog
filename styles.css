@@ -9,10 +9,12 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 3em;
 	font-family: SketchBlock;
+	text-size-adjust: auto;
   }
   
 h2 {
     font-family: SketchBlock;
+	text-size-adjust: auto;
 }
 
 /* Detect small screens, adjust accordingly */
@@ -200,19 +202,19 @@ body {
   font-family: Garamond, Palatino, Georgia;
 }
 
-.bubblelink {
-  font-family: SketchBlock, Garamond, Palatino, Georgia;
-  color: #3C54B9;
-  background-color: #C0C0C0;
-  border-radius: 30px 15px;
+.float-body {
+	/*float: left; */
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 a {
   font-family: SketchBlock, Garamond, Palatino, Georgia;
   color: #3C54B9;
-  background-color: #C0C0C0;
-  border-radius: 20px;
-  text-decoration: none;
+  text-decoration: underline;
+  font-size: 85%;
 }
 
 a.visited {
@@ -227,10 +229,26 @@ a.visited:hover{
   color: #A569D1;
 }
 
+.buttonlink {
+	background-color: transparent;
+	text-decoration: none;
+	background-color: #DDDDDD;
+	border-radius: 30px 15px;
+	font-size: 125%;
+}
+
+.buttonlink:hover {
+	background-color: #CCCCCC;
+}
+
 img { /* scale images to screen */
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 

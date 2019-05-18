@@ -4,7 +4,7 @@
 
 <link rel = "stylesheet"
    type = "text/css"
-   href = "styles.css?v=13" />
+   href = "styles.css?v=16" />
    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 <div style="z-index: 2;">
 <!-- <div id="bg" class="magic" onload="showBG"></div>  ~-->
 <title>Josh Aaron Miller | Home </title>
-<!-- Me --> 
+<!-- Me
 <div class="mainpage_container" style="float: right;" 
 	onmouseenter="slideshow('me')" onmouseleave="unanimate('me')">
 	<a href="about"> 
@@ -27,7 +27,7 @@
 		</div>
 	</a>
 </div> 
-
+ --> 
 
 <div class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
 	<h1 class="maintitle"> Josh Aaron Miller </h1>
@@ -37,24 +37,24 @@
 	<br><br>
 
 	
-	<!-- Portfolio -->
+	<!-- Portfolio - ANIM TEMP DISABLED -->
 <div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
 	<a href="portfolio">
-		<div class="disappear_on_hover">
+		<div> <!--class="disappear_on_hover">-->
 			<img  src="assets/portfolio_1.png"> 
 		</div>
-		<div class="mainpage_overlay">
+		<!--<div class="mainpage_overlay">
 			<div class="mainpage_image">
 				<img id="portfolio_ani" src="assets/portfolio_2.png">
 			</div>
-		</div> 
+		</div> -->
 	</a>
 </div>
 	
 <br><br><br><br>
 	
 <!-- Research -->
-<div class="mainpage_container" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
+<div class="mainpage_container" style="padding-left:30px" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
 	<a href="research">
 		<div class="disappear_on_hover">
 			<img  src="assets/research_1.png">
@@ -67,24 +67,24 @@
 	</a>
 </div>
 
+<a class="buttonlink" href="about">About Me</a>
 
 
-
-<br><br><br>
-<br><br><br>
-<br><br><br>
-
-<a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="64" height="64" src="assets/twitter.png" alt="Twitter"></a>    
-<a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="64" height="64" src="assets/linkedin2.png" alt="LinkedIn"></a>    
-<a style="  background-color:transparent;" href="https://github.com/joshmiller17/"><img width="64" height="64" src="assets/github.png" alt="GitHub"></a>
+<div style="position: absolute; left: 3vh; bottom: 5vh;">
+<a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="5%" height="5%" src="assets/twitter.png" alt="Twitter"></a>
+<a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="5%" height="64" src="assets/linkedin2.png" alt="LinkedIn"></a>
+<a style="  background-color:transparent;" href="https://github.com/joshmiller17/"><img width="5%" height="5%" src="assets/github.png" alt="GitHub"></a>
 
 <br>
-<b>email</b>: last name dot first name, husky.neu.edu
+<b>email</b>: [last name].[first name], husky.neu.edu
 <br>
-<a class="bubblelink" href="credits">Credits</a>
+<a class="buttonlink" style="font-size:smaller" href="credits">Credits</a>
+<div>
+
+</div>
 
 
-</div><script>
+<script>
 var animation_indices = {};
 animation_indices['research'] = 1;
 animation_indices['me'] = 1;
