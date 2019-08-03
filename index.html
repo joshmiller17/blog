@@ -18,37 +18,35 @@
 <div class="mainpage_container" style="float: right;" 
 	onmouseenter="slideshow('me')" onmouseleave="unanimate('me')">
 	<a href="about"> 
-		<!-- <div class="disappear_on_hover"> -->
+		 <div class="disappear_on_hover">
 			<img src="assets/josh.png">
 		</div>
-	<!--	<div class="mainpage_overlay">
+		<div class="mainpage_overlay">
 			<div class="mainpage_image">
 				<img id="me_ani" src="assets/me_2.png">
 			</div>
-		</div> -->
+		</div>
 	</a>
-</div> 
+</div>
 
 
 <div class="padding" style="width=auto; margin-top: 0px;margin-bottom: 0px;">
 	<h1 class="maintitle"> Josh Aaron Miller </h1>
 	<h2 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
-	Please pardon the appearance, I'm still setting up.
-	
 	<br><br>
 
 	
 	<!-- Portfolio - ANIM TEMP DISABLED -->
 <div class="mainpage_container" onmouseenter="slideshow('portfolio')" onmouseleave="unanimate('portfolio')">
 	<a href="portfolio">
-		<div> <!--class="disappear_on_hover">-->
+		<div> class="disappear_on_hover">
 			<img  src="assets/portfolio_1.png"> 
 		</div>
-		<!--<div class="mainpage_overlay">
+		<<div class="mainpage_overlay">
 			<div class="mainpage_image">
 				<img id="portfolio_ani" src="assets/portfolio_2.png">
 			</div>
-		</div> -->
+		</div>
 	</a>
 </div>
 	
@@ -58,11 +56,11 @@
 <div class="mainpage_container" style="padding-left:30px" onmouseenter="slideshow('research')" onmouseleave="unanimate('research')">
 	<a href="research">
 		<div class="disappear_on_hover">
-			<img  src="assets/research_1.png">
+			<img  src="assets/research_simple_anim_1.png">
 		</div>
 		<div class="mainpage_overlay">
 			<div class="mainpage_image">
-				<img id="research_ani" src="assets/research_2.png">
+				<img id="research_ani" src="assets/research_simple_anim_2.png">
 			</div>
 		</div>
 	</a>
@@ -138,10 +136,6 @@ function run_animation(img){
 }
 
 function slideshow(img){
-	//TEMP ONLY
-	if (img != 'research'){
-		return;
-	}
 	
 	if (!animate_bools[img]) {
 	  animate_bools[img] = true;
@@ -152,9 +146,15 @@ function slideshow(img){
 	}
 }
 
+function highlight(img){
+	animation_indices[img] = 2;
+	image.src = "assets/" + img + "_" + animation_indices[img] + ".png";
+}
+
 function unanimate(img){
 	animate_bools[img] = false;
 	animation_indices[img] = 1;
+	image.src = "assets/" + img + "_" + animation_indices[img] + ".png"; //only while using the highlight function
 }
 
 /* Background reveal by https://codepen.io/suez/pen/PwKZwO */
