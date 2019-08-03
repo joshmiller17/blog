@@ -73,7 +73,7 @@ h2 {
 }
 
 #two_column {
-    width:50%;
+    width:45%;
     margin-right:2%;
     float:left;
 }
@@ -200,12 +200,13 @@ body {
   */
   background: white url("assets/website_tile.png") 25px 25px repeat fixed;
   color: Black;
-  width: 100%;
+  width: 95%;
   font-size: 130%;
   padding-left: 0%;
   padding-right: 0%;
   padding-top: 0%;
   padding-bottom: 0%;
+  margin-right: 50px;
   font-family: Garamond, Palatino, Georgia;
 }
 
