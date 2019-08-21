@@ -10,19 +10,19 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
  
 
-<div style="z-index: 2; margin-right: 100px;">
+<div style="z-index: 2;">
 <!-- <div id="bg" class="magic" onload="showBG"></div>  ~-->
 <title>Josh Aaron Miller | Home </title>
 
 
-<div class="padding" style="width=95%; margin-top: 0px;margin-bottom: 0px;">
+<div class="padding">
 	<h1 class="maintitle"> Josh Aaron Miller </h1>
-	<h2 style="width:75%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
+	<h2 style="width:100%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
 	<br><br>
 
 	
 	<!-- Portfolio -->
-<div class="mainpage_container" onmouseenter="highlight('portfolio')" onmouseleave="unanimate('portfolio')">
+<div class="mainpage_container" style="left:0%; top: 20%;" onmouseenter="highlight('portfolio')" onmouseleave="unanimate('portfolio')">
 	<a href="portfolio">
 		<div class="disappear_on_hover">
 			<img src="assets/portfolio_1.png"> 
@@ -38,7 +38,7 @@
 <br><br><br><br>
 	
 <!-- Research -->
-<div class="mainpage_container" style="padding-left:30px" onmouseenter="highlight('research')" onmouseleave="unanimate('research')">
+<div class="mainpage_container" style="left: 10%;" onmouseenter="highlight('research_simple_anim')" onmouseleave="unanimate('research_simple_anim')">
 	<a href="research">
 		<div class="disappear_on_hover">
 			<img  src="assets/research_simple_anim_1.png">
@@ -53,22 +53,22 @@
 
 <!-- Me -->
 
-<div class="mainpage_container" style="float: left; margin-top: -150px;" 
-	onmouseenter="highlight('me')" onmouseleave="unanimate('me')">
+<div class="mainpage_container" style="float: left; left: 20%; margin-top: -10%;" 
+	onmouseenter="highlight('josh')" onmouseleave="unanimate('josh')">
 	<a href="about"> 
 		 <div class="disappear_on_hover">
-			<img src="assets/me_1.png">
+			<img src="assets/josh_1.png">
 		</div>
 		<div class="mainpage_overlay">
 			<div class="mainpage_image">
-				<img id="me_ani" src="assets/me_2.png">
+				<img id="me_ani" src="assets/josh_2.png">
 			</div>
 		</div>
 	</a>
 </div>
 
 
-<div style="position: absolute; left: 3vh; bottom: 5vh;">
+<div style="position: fixed; left: 3vh; bottom: 5vh;">
 <a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img width="5%" height="5%" src="assets/twitter.png" alt="Twitter"></a>
 <a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img width="5%" height="64" src="assets/linkedin2.png" alt="LinkedIn"></a>
 <a style="  background-color:transparent;" href="https://github.com/joshmiller17/"><img width="5%" height="5%" src="assets/github.png" alt="GitHub"></a>
@@ -110,6 +110,10 @@ function anim_loop(img) {
 
 function run_animation(img){
 
+	if (img == "research" || img == "me"){ // fix temp setup of doing only 2-frame transitions
+		return;
+	}
+
 	/* This block fixes the bug where multiple timeouts get called for some reason */
 	var id = window.setTimeout(function() {}, 0);
 	while (id--) {
@@ -148,16 +152,18 @@ function slideshow(img){
 }
 
 function highlight(img){
+	return; //disabled for 2-step animations for now
 	animation_indices[img] = 2;
 	var image = document.getElementById(img + "_ani");
 	image.src = "assets/" + img + "_" + animation_indices[img] + ".png";
 }
 
 function unanimate(img){
+	return; //disabled for 2-step animations for now
 	animate_bools[img] = false;
 	animation_indices[img] = 1;
 	var image = document.getElementById(img + "_ani");
-	image.src = "assets/" + img + "_" + animation_indices[img] + ".png"; //only while using the highlight function
+	image.src = "assets/" + img + "_" + animation_indices[img] + ".png";
 }
 
 /* Background reveal by https://codepen.io/suez/pen/PwKZwO */
