@@ -46,7 +46,7 @@ h2 {
 }
  */
 
-@media screen and (max-width: 900) {
+@media only screen and (max-width: 1080px) {
 
 	.maintitle {
 		font-size: 2em;
@@ -58,6 +58,28 @@ h2 {
 	.mobile_show {
 		 display: block;
 	}
+	
+	h3{
+		font-size: 2em;
+	}
+	
+
+}
+
+@media only screen and (min-width: 1081px) {
+
+	.maintitle {
+		font-size: 3em;
+	}
+	
+	.mobile_hide {
+		 display: block;
+	}
+	.mobile_show {
+		 display: none;
+	}
+	
+
 }
 
 
