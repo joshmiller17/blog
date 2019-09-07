@@ -221,7 +221,7 @@ body {
   background:    -moz-linear-gradient(#D0D7F3, #7084D2);
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
-  background: white url("assets/website_tile.png") 25px 25px repeat fixed;
+  background: #FAFAFE url("assets/background_tile2.png") 25px 25px repeat-x fixed;
   color: Black;
   width: 95%;
   font-size: 130%;
