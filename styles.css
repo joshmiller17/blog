@@ -1,5 +1,10 @@
 /* http://paletton.com/#uid=53R0N0koE-v5kWogVJjwVskFmhS */
 
+html {
+background: #FAFAFE url("assets/background_tile2.png") 25px 25px repeat-y;
+
+}
+
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.15;
 	margin-top: 5px;
@@ -221,7 +226,6 @@ body {
   background:    -moz-linear-gradient(#D0D7F3, #7084D2);
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
-  background: #FAFAFE url("assets/background_tile2.png") 25px 25px repeat-x fixed;
   color: Black;
   width: 95%;
   font-size: 130%;
