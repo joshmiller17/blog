@@ -189,8 +189,8 @@ h2 {
   min-width: 330px;
   max-width: 25%;
   object-fit: contain;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 0%;
   padding-bottom: 0%;
   margin-left: 0%;
@@ -252,7 +252,7 @@ body {
   background:         linear-gradient(#D0D7F3, #7084D2);
   */
   color: Black;
-  width: 95%;
+  width: 98%;
   height: 97%;
   font-size: 130%;
   padding-left: 0%;
