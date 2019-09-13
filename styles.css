@@ -2,7 +2,7 @@
 
 html {
 background: #FAFAFE url("assets/background_tile2.png") 25px 25px repeat-y;
-
+height: 100%;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -67,7 +67,9 @@ h2 {
 	h3{
 		font-size: 2em;
 	}
-	
+	footer {
+		font-size: 150%;
+	}
 
 }
 
@@ -83,7 +85,6 @@ h2 {
 	.mobile_show {
 		 display: none;
 	}
-	
 
 }
 
@@ -165,19 +166,23 @@ h2 {
 }
 
 .mainpage_container {
-  float: left;
-  position: absolute;
-  min-width: 100px;
+  min-width: 330px;
   max-width: 25%;
   object-fit: contain;
-  padding-left: 0%;
-  padding-right: 0%;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-top: 0%;
   padding-bottom: 0%;
   margin-left: 0%;
   margin-right: 0%;
   margin-top: 0%;
   margin-bottom: 0%;
+  display: flex;
+}
+
+#icon-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mainpage_container:hover .disappear_on_hover {
@@ -228,6 +233,7 @@ body {
   */
   color: Black;
   width: 95%;
+  height: 100%;
   font-size: 130%;
   padding-left: 0%;
   padding-right: 0%;
@@ -288,23 +294,14 @@ img { /* scale images to screen */
 	padding-bottom: 10px;
 }
 
+#outer-container {
+	height: 99%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer {
+    display: flex;
+    margin-top: -1em;
+}
