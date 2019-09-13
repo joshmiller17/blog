@@ -36,32 +36,30 @@ function unlight(element) {
 <div class="padding">
 	<h1 class="maintitle"> Josh Aaron Miller </h1>
 	<h2 style="width:100%; margin-top: 0px;margin-bottom: 0px;margin-right:0px;"> Game scholar, interaction designer </h2>
-	<br><br>
 	
-	<div id="icons" class="padding">
-
+	<div id="icons">
 	
 	<div id="icon-container"> <!-- class="mobile_hide" -->
 			<!-- Portfolio -->
-		<div id="portfolio" class="mainpage_container" onmouseenter="highlight('portfolio')" onmouseleave="unlight('portfolio')">
+		<div id="portfolio" class="mainpage_container">
 			<a href="portfolio">
-				<img src="assets/portfolio_1.png"> 
+				<img onmouseenter="highlight('portfolio')" onmouseleave="unlight('portfolio')" src="assets/portfolio_1.png"> 
 			</a>
 		</div>
 					
 		<!-- Research -->
-		<div id="research" class="mainpage_container" onmouseenter="highlight('research')" onmouseleave="unlight('research')">
+		<div id="research" class="mainpage_container">
 			<a href="research">
-				<img src="assets/research_simple_anim_1.png">
+				<img  onmouseenter="highlight('research')" onmouseleave="unlight('research')" src="assets/research_simple_anim_1.png">
 			</a>
 		</div>
 
 		<!-- Me -->
 		
 			<div id="about" class="mainpage_container"
-				onmouseenter="highlight('about')" onmouseleave="unlight('about')">
+				>
 				<a href="about"> 
-					<img src="assets/josh_1.png">
+					<img onmouseenter="highlight('about')" onmouseleave="unlight('about')" src="assets/josh_1.png">
 				</a>
 			</div>
 		</div>
@@ -69,16 +67,16 @@ function unlight(element) {
 	</div>
 </div>
 
-<div id="footer">
+<div id="footer" class="padding">
 <div>
  <a style="  background-color:transparent;" href="https://twitter.com/joshaaronmiller"><img max-width="64px" width="5%" height="5%" src="assets/twitter.png" alt="Twitter"></a>
 <a style="  background-color:transparent;" href="https://www.linkedin.com/in/josh-miller-5675895a/"><img max-width="64px"  width="5%" height="64" src="assets/linkedin2.png" alt="LinkedIn"></a>
 <a style="  background-color:transparent;" href="https://github.com/joshmiller17/"><img max-width="64px" width="5%" height="5%" src="assets/github.png" alt="GitHub"></a>
 
 <br>
-<b>email</b>: [last name].[first name], husky.neu.edu
+<p style="font-size:bigger"><b>email</b>: [last name].[first name], husky.neu.edu</p>
 <br>
-<a class="buttonlink" style="font-size:smaller" href="credits">Credits</a>
+<a class="buttonlink" href="credits">Credits</a>
 </div>
 </div>
 
