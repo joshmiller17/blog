@@ -1,0 +1,274 @@
+{
+	id:"",
+	name:"",
+	data:{},
+	children: [
+	]
+}
+
+
+
+
+
+
+
+var json = 
+	{
+        name: "Major Steps",
+        data: {},
+        children: [
+			
+			{
+			id:"1",
+			name: "Briefing / Establishing Rapport",
+			data: {},
+			children: [
+				{
+					id:"1.1",
+					name: "Explain to the SME why they were selected for the interview.",
+					data: {},
+					children:[
+						{
+							id:"1.1.1",
+							name:"Example:\n\"You were selected for the interview because you are an expert in this field.\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				},
+				
+								{
+					id:"1.2",
+					name: "Seek permission for audio or video recording.",
+					data: {},
+					children:[
+						{
+							id:"1.2.1",
+							name:"Example:\n\"Do you mind if we audio record the entire interview session?\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				},
+				
+				
+								{
+					id:"1.3",
+					name: "Introduce yourself and explain why you are the appropriate person to conduct this interview.",
+					data: {},
+					children:[
+						{
+							id:"1.3.1",
+							name:"Example:\n\"I am not an expert in your field but that makes me more likely to ask questions that a novice is likely to have.\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				},
+				
+				{
+					id:"1.4",
+					name: "Describe what you want to capture and why. Inform SME what you are NOT interested in in this interview as well.",
+					data: {},
+					children:[
+						{
+							id:"1.4.1",
+							name:"Example:\n\"We are looking for the procedures and knowledge in performing a task.\"",
+							data:{},
+							children: [
+							]
+						},
+						
+						{
+							id:"1.4.2",
+							name:"Example:\n\"Some knowledge is not explicitly verbalizable which makes it difficult for the novices to learn.\"",
+							data:{},
+							children: [
+							]
+						},
+						
+						{
+							id:"1.4.3",
+							name:"Example:\n\"I am not too worried about [certain aspect of the task] so we can skip that part during the interview.\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				},
+				
+							{
+					id:"1.5",
+					name: "Explain to SME how the data will be used at the start of the interview.",
+					data: {},
+					children:[
+						
+					]
+				},
+				
+							{
+					id:"1.6",
+					name: "Ask for the amount of time the SME has for the interview. Work within the stipulated time. If SME has no time constraint, limit the interview to 1 hour.",
+					data: {},
+					children:[
+					]
+				},
+				
+							{
+					id:"1.7",
+					name: "Provide an overview of the process for this interview session such as duration and how it will be conducted. It is important to inform the SME that you will delve deep into.",
+					data: {},
+					children:[
+						{
+							id:"1.7.1",
+							name:"Example:\n\"This interview will take about X hours..\"",
+							data:{},
+							children: [
+							]
+						},
+						
+						{
+							id:"1.7.2",
+							name:"Example:\n\"First, we will... Then we will...\"",
+							data:{},
+							children: [
+							]
+						},
+						
+						{
+							id:"1.7.3",
+							name:"Example:\n\"I apologize in advance that I will probably ask redundant questions, ask you to repeat or explain something during the interview.\"",
+							data:{},
+							children: [
+							]
+						},
+						
+						{
+							id:"1.7.4",
+							name:"Example:\n\"We might delve into very specific details.\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				},
+				
+							{
+					id:"1.8",
+					name: "Clarify any questions so that the SME will be prepared and more willing to cooperate.",
+					data: {},
+					children:[
+						{
+							id:"1.8.1",
+							name:"Example:\n\"Are there any questions before we start the interview?\"",
+							data:{},
+							children: [
+							]
+						}
+					]
+				}
+			]
+			},
+			
+			{
+			id:"2",
+			name: "Task Overview",
+			data: {},
+			children: [
+										{
+						id:"2.1",
+						name:"Ask for the outline of the process for the task of interest, or a step-by-step procedure of the sub-task critical to the task of interest.",
+						data:{},
+						children: [
+						]
+					},
+					
+					{
+						id:"2.2",
+						name:"Is this the first interview?",
+						data:{$type:"ellipse"},
+						children: [
+						
+							{
+							id:"2.2.1",
+							name:"<b>YES</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various sub tasks required to perform the task of interest.",
+							data:{},
+							children: [
+									{
+									id:"2.2.1.1",
+									name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?",
+									data:{},
+									children: [
+									]
+									}
+							]
+						},
+						
+						{
+							id:"2.2.2",
+							name:"<b>NO</b>: Have you seen trends in the overview process in performing the task of interest?",
+							data:{$type:"ellipse"},
+							children: [
+										{
+									id:"2.2.2.1",
+									name:"<b>YES</b>: Go to: <i>Elicit sub task step-by-step</i>.",
+									data:{redirect:"3"},
+									children: [
+									]
+								},
+								
+										{
+									id:"2.2.2.2",
+									name:"<b>NO</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various sub tasks required to perform the task of interest.",
+									data:{},
+									children: [
+											{
+											id:"2.2.2.2.1",
+											name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?",
+											data:{},
+											children: []
+											}
+									]
+								}
+							]
+						}
+						
+						]
+					}
+
+				]
+			},
+			
+			{
+			id:"3",
+			name: "Elicit sub task step-by-step",
+			data: {},
+			children: []
+			},
+			
+			{
+			id:"4",
+			name: "Seek Decision Criteria",
+			data: {},
+			children: []
+			},
+			
+			{
+			id:"5",
+			name: "Constant Monitoring",
+			data: {},
+			children: []
+			},
+			
+			{
+			id:"6",
+			name: "Closing",
+			data: {},
+			children: []
+			}
+		]
+
+};
