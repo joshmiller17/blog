@@ -180,7 +180,7 @@ var json =
 			children: [
 										{
 						id:"2.1",
-						name:"Ask for the outline of the process for the task of interest, or a step-by-step procedure of the sub-task critical to the task of interest.",
+						name:"Ask for the outline of the process for the task of interest, or a step-by-step procedure of the subtask critical to the task of interest.",
 						data:{},
 						children: [
 						]
@@ -194,7 +194,7 @@ var json =
 						
 							{
 							id:"2.2.1",
-							name:"<b>YES</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various sub tasks required to perform the task of interest.",
+							name:"<b>YES</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various subtasks required to perform the task of interest.",
 							data:{},
 							children: [
 									{
@@ -214,7 +214,7 @@ var json =
 							children: [
 										{
 									id:"2.2.2.1",
-									name:"<b>YES</b>: Go to: <i>Elicit sub task step-by-step</i>.",
+									name:"<b>YES</b>: Go to: <i>Elicit subtask step-by-step</i>.",
 									data:{redirect:"3"},
 									children: [
 									]
@@ -222,7 +222,7 @@ var json =
 								
 										{
 									id:"2.2.2.2",
-									name:"<b>NO</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various sub tasks required to perform the task of interest.",
+									name:"<b>NO</b>: Start by seeking an overview of the process required to perform the task of interest. The current focus is to identify the various subtasks required to perform the task of interest.",
 									data:{},
 									children: [
 											{
@@ -244,9 +244,327 @@ var json =
 			
 			{
 			id:"3",
-			name: "Elicit sub task step-by-step",
+			name: "Elicit subtask step-by-step",
 			data: {},
-			children: []
+			children: [
+						{
+						id:"3.1",
+						name:"Seek for a detailed step-by-step procedure of the subtasks. Explore the subtasks one at a time. The current focus is to capture the procedure of the subtasks as comprehensively as possible. It is not necessary to cover all subtasks within a single interview session.",
+						data:{},
+						children: [
+										{
+										id:"3.1.1",
+										name:"Example:\n\"What I want to focus on is...",
+										data:{},
+										children: [
+											]
+										},
+					
+									{
+										id:"3.1.2",
+										name:"Example:\n\"There are X things that I am interested in. The first is... And the second is... so let's start with the first subtask.",
+										data:{},
+										children: [
+										]
+									}
+						]
+					},
+					
+					{
+					id:"3.2",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+					{
+					id:"3.3",
+					name:"<b>IF</b> the sequence of steps in performing a task / subtask is not explicitly mentioned...",
+					data:{},
+					children: [
+						{
+						id:"3.3.1",
+						name:"<b>THEN</b> Clarify with the SME on the sequence.",
+						data:{},
+						children: [
+									{
+										id:"3.3.1.1",
+										name:"Example:\n\"Would you ideally do step A followed by step B, or would you be doing both at the same time?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+					
+						{
+					id:"3.4",
+					name:"<b>IF</b> the SME has difficulty figuring out the sequence of the steps...",
+					data:{},
+					children: [
+					
+								{
+										id:"3.4.1",
+										name:"Example:\n\"I wouldn't say one before the other...",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.4.2",
+										name:"Example:\n\"That doesn't mean that...",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.4.3",
+										name:"Example:\n\"It's very difficult to do this...",
+										data:{},
+										children: [
+										]
+									},
+					
+					
+						{
+						id:"3.4.4",
+						name:"<b>THEN</b> Leverage the SME's personal experience.",
+						data:{},
+						children: [
+									{
+										id:"3.4.4.1",
+										name:"Example:\n\"Can you give me an example?",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.4.4.2",
+										name:"Example:\n\"Can you give me an instance when you...?",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.4.4.3",
+										name:"Example:\n\"Is there a time when you...?",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.4.4.4",
+										name:"Example:\n\"So let's say there's a time when you... what decision / action did you make and why?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.5",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.6",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.7",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.8",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.9",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.10",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.11",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+						{
+					id:"3.12",
+					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					data:{},
+					children: [
+						{
+						id:"3.2.1",
+						name:"<b>THEN</b> Seek an explanation.",
+						data:{},
+						children: [
+									{
+										id:"3.2.1",
+										name:"Example:\n\"Why would you perform this action?",
+										data:{},
+										children: [
+										]
+									}
+								]
+						}
+					]
+					},
+					
+					
+			]
 			},
 			
 			{

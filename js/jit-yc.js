@@ -2084,6 +2084,7 @@ THE SOFTWARE.
                 if (!this.Config.overridable) {
                     return E[F] || 0
                 }
+				console.log('B:'+B+"; w:"+w);
                 return (z in B) ? B[z] : ((z in this.data) ? this.data[z] : (E[F] || 0))
             };
             var y = function(C, D, B, z) {
