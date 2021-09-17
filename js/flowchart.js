@@ -313,7 +313,7 @@ var json =
 					},
 					
 						{
-						id:"2.4",
+						id:"2.5",
 						name:"Go to elicit subtask step-by-step",
 						data:{redirect:"3"},
 						children: [
@@ -483,9 +483,6 @@ var json =
 										]
 									},
 								]
-					
-						
-						]
 						},
 					
 					
@@ -845,7 +842,7 @@ var json =
 								},
 								{
 								id:"3.10.2.2",
-								name:"Example:\"Are there other ways to perform the task or are these pretty much everything?"",
+								name:"Example:\"Are there other ways to perform the task or are these pretty much everything?\"",
 								data:{},
 								children: [
 								]
@@ -886,7 +883,6 @@ var json =
 					},
 					
 					{
-					{
 					id:"3.12",
 					name:"Identify the required quality standard.",
 					data:{},
@@ -920,7 +916,7 @@ var json =
 						children: [
 							{
 								id:"3.13.2.1",
-								name:"Example:\"So in situation like this, you just need to do X and not Y right?"",
+								name:"Example:\"So in situation like this, you just need to do X and not Y right?\"",
 								data:{},
 								children: [
 								]
@@ -1067,7 +1063,7 @@ var json =
 									name:"Cue: \"That's a hard question.\"",
 									data:{},
 									children: []
-									}
+									},
 									{
 									id:"4.1.3.3",
 									name:"<b>THEN</b>: Rephrase the question on the selection criteria.",
@@ -1079,7 +1075,9 @@ var json =
 										data:{},
 										children: []
 										}
-								]
+									]
+									},
+							]
 							},
 							
 							{
@@ -1224,7 +1222,7 @@ var json =
 					]
 					},
 
-{
+					{
 					id:"4.2",
 					name:"Was this the last decision point?",
 					data:{$type:"ellipse"},
@@ -1265,8 +1263,8 @@ var json =
 								}
 							]
 							}
-					]
-				},
+						]
+					},
 				
 				{
 					id:"4.3",
@@ -1287,8 +1285,11 @@ var json =
 								data:{redirect:"3"},
 								children: [
 								]
-					]
-				}
+								}
+							]
+						}
+			]
+			},
 					
 			
 			{
@@ -1495,6 +1496,8 @@ var json =
 						]
 						}
 					]
+					},
+				]
 				},
 				
 				{
@@ -1646,9 +1649,8 @@ var json =
 					}
 				]
 			}
-		]
-
-};
+			
+	]};
 
 
 
