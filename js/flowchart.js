@@ -44,9 +44,6 @@ var Log = {
 function init(){
     //init data
 
-
-
-
 var json = 
 	{
         name: "Major Steps",
@@ -234,7 +231,7 @@ var json =
 							children: [
 									{
 									id:"2.2.1.1",
-									name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?",
+									name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?\"",
 									data:{},
 									children: [
 									]
@@ -262,7 +259,7 @@ var json =
 									children: [
 											{
 											id:"2.2.2.2.1",
-											name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?",
+											name:"Example:\n\"I am really interested in the transition between [start of task] to [end of task]. Can you give me an outline of the process you go through?\"",
 											data:{},
 											children: []
 											}
@@ -272,7 +269,57 @@ var json =
 						}
 						
 						]
-					}
+					},
+					
+					
+						{
+						id:"2.3",
+						name:"Identify the conditions to initiate this task.",
+						data:{},
+						children: [
+						
+									{
+								id:"2.3.1",
+								name:"Example: \"What conditions must be present to start the task?\"",
+								data:{},
+								children: [
+								]
+							},
+							
+							{
+								id:"2.3.2",
+								name:"Example: \"What are the indications that you need to perform this task?\"",
+								data:{},
+								children: [
+								]
+							}
+						]
+					},
+					
+					{
+						id:"2.4",
+						name:"Find out the importance and uniqueness of the task",
+						data:{},
+						children: [
+						
+									{
+								id:"2.4.1",
+								name:"Example: \"What is the reason for the unique or unexpected nature of this task?\"",
+								data:{},
+								children: [
+								]
+							}
+						]
+					},
+					
+						{
+						id:"2.4",
+						name:"Go to elicit subtask step-by-step",
+						data:{redirect:"3"},
+						children: [
+					
+						]
+						}
 
 				]
 			},
@@ -289,7 +336,7 @@ var json =
 						children: [
 										{
 										id:"3.1.1",
-										name:"Example:\n\"What I want to focus on is...",
+										name:"Example:\n\"What I want to focus on is...\"",
 										data:{},
 										children: [
 											]
@@ -297,7 +344,7 @@ var json =
 					
 									{
 										id:"3.1.2",
-										name:"Example:\n\"There are X things that I am interested in. The first is... And the second is... so let's start with the first subtask.",
+										name:"Example:\n\"There are X things that I am interested in. The first is... And the second is... so let's start with the first subtask.\"",
 										data:{},
 										children: [
 										]
@@ -307,17 +354,17 @@ var json =
 					
 					{
 					id:"3.2",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME does not give an adequate explanation of why a certain action / decision is performed...",
 					data:{},
 					children: [
 						{
 						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
+						name:"<b>THEN</b>: Seek an explanation.",
 						data:{},
 						children: [
 									{
 										id:"3.2.1.1",
-										name:"Example:\n\"Why would you perform this action?",
+										name:"Example:\n\"Why would you perform this action?\"",
 										data:{},
 										children: [
 										]
@@ -329,160 +376,184 @@ var json =
 					
 					{
 					id:"3.3",
-					name:"<b>IF</b> the sequence of steps in performing a task / subtask is not explicitly mentioned...",
+					name:"<b>IF</b>: the sequence of steps in performing a task / subtask is not explicitly mentioned...",
 					data:{},
 					children: [
 						{
 						id:"3.3.1",
-						name:"<b>THEN</b> Clarify with the SME on the sequence.",
+						name:"<b>THEN</b>: Clarify with the SME on the sequence.",
 						data:{},
 						children: [
 									{
 										id:"3.3.1.1",
-										name:"Example:\n\"Would you ideally do step A followed by step B, or would you be doing both at the same time?",
+										name:"Example:\n\"Would you ideally do step A followed by step B, or would you be doing both at the same time?\"",
 										data:{},
 										children: [
 										]
 									}
 								]
-						}
-					]
-					},
-					
+						},
+						
+						{
+					id:"3.3.2",
+					name:"Is the SME having difficulty figuring out the sequence of steps?",
+					data:{$type:"ellipse"},
+					children: [
 					
 						{
-					id:"3.4",
-					name:"<b>IF</b> the SME has difficulty figuring out the sequence of the steps...",
+						id:"3.3.2.1",
+						name:"<b>YES</b>: Leverage the SME's personal experience.",
+						data:{},
+						children: [
+									{
+										id:"3.3.2.1.1",
+										name:"Example:\n\"Can you give me an example?\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.3.2.1.2",
+										name:"Example:\n\"Can you give me an instance when you...?\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.3.2.1.3",
+										name:"Example:\n\"Is there a time when you...?\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.3.2.1.4",
+										name:"Example:\n\"So let's say there's a time when you... what decision / action did you make and why?\"",
+										data:{},
+										children: [
+										]
+									}
+								]
+						},
+						
+							{
+					id:"3.3.2.2",
+					name:"<b>NO</b>: the SME is able to indicate the sequence of steps...",
 					data:{},
 					children: [
+								{
+								id:"3.3.2.2.1",
+								name:"Clarify with the SME if they will be doing all or just some of the steps.",
+								data:{},
+								children: [
+											{
+												id:"3.3.2.2.1.1",
+												name:"Example:\n\"Would you be doing all of those things or would you be picking and choosing amongst those different things to do?\"",
+												data:{},
+												children: [
+												]
+											}
+										]
+								}
+						]
+						},
+						
+						{
+						id:"3.3.2.3",
+						name:"I'm not sure (see cues)",
+						data:{},
+						children: [
 					
 								{
-										id:"3.4.1",
-										name:"Example:\n\"I wouldn't say one before the other...",
+										id:"3.3.2.3.1",
+										name:"Cue:\n\"I wouldn't say one before the other...\"",
 										data:{},
 										children: [
 										]
 									},
 									
 									{
-										id:"3.4.2",
-										name:"Example:\n\"That doesn't mean that...",
+										id:"3.3.2.3.2",
+										name:"Cue:\n\"That doesn't mean that...\"",
 										data:{},
 										children: [
 										]
 									},
 									
 									{
-										id:"3.4.3",
-										name:"Example:\n\"It's very difficult to do this...",
+										id:"3.3.2.3.3",
+										name:"Cue:\n\"It's very difficult to do this...\"",
 										data:{},
 										children: [
 										]
 									},
-					
-					
-						{
-						id:"3.4.4",
-						name:"<b>THEN</b> Leverage the SME's personal experience.",
-						data:{},
-						children: [
-									{
-										id:"3.4.4.1",
-										name:"Example:\n\"Can you give me an example?",
-										data:{},
-										children: [
-										]
-									},
-									
-									{
-										id:"3.4.4.2",
-										name:"Example:\n\"Can you give me an instance when you...?",
-										data:{},
-										children: [
-										]
-									},
-									
-									{
-										id:"3.4.4.3",
-										name:"Example:\n\"Is there a time when you...?",
-										data:{},
-										children: [
-										]
-									},
-									
-									{
-										id:"3.4.4.4",
-										name:"Example:\n\"So let's say there's a time when you... what decision / action did you make and why?",
-										data:{},
-										children: [
-										]
-									}
 								]
-						}
+					
+						},
+					
+					
+					]
+					},
 					]
 					},
 					
-						{
-					id:"3.5",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
-					data:{},
-					children: [
-						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
-						data:{},
-						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
-								]
-						}
-					]
-					},
+					
+						
 					
 						{
 					id:"3.6",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME suggests that it is impossible to perform all the steps...",
 					data:{},
 					children: [
-						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
-						data:{},
-						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
+								{
+										id:"3.6.1",
+										name:"Cue: the SME asks multiple questions (how much, what is, which of these, how do, how is)",
 										data:{},
 										children: [
 										]
+									},
+									
+									{
+										id:"3.6.2",
+										name:"Cue: \"Find as many as possible\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.6.3",
+										name:"Cue: \"The human brain can only work with so much information\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.6.4",
+										name:"<b>THEN</b>: Go to <i>Seek decision criteria</i>",
+										data:{redirect:"4"},
+										children: [
+										]
 									}
-								]
-						}
-					]
-					},
+					
+							]
+						},
+				
 					
 						{
 					id:"3.7",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME indicates that they would perform all actions...",
 					data:{},
 					children: [
 						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
-						data:{},
+						id:"3.7.1",
+						name:"<b>THEN</b>: Return to eliciting the subtask step-by-step.",
+						data:{redirect: "3.1"},
 						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
 								]
 						}
 					]
@@ -490,65 +561,79 @@ var json =
 					
 						{
 					id:"3.8",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME suggests that the task is important but difficult or challenging, even for an expert...",
 					data:{},
 					children: [
 						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
+						id:"3.8.1",
+						name:"Cue: \"If you don't have any of these items, then you might have to...\"",
 						data:{},
-						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
-								]
+						children: [	]
+						},
+						
+						{
+						id:"3.8.2",
+						name:"Cue: \"Sometimes it's not as easy...\"",
+						data:{},
+						children: [	]
+						},
+						
+						{
+						id:"3.8.3",
+						name:"<b>THEN</b>: Ask whether the task would be challenging for a novice as well and why.",
+						data:{},
+						children: [	
+								{
+								id:"3.8.3.1",
+								name:"Example: \"How challenging would it be for novices to perform this action / make this decision?\"",
+								data:{},
+								children: [	]
+								},
+							]
 						}
+						
+						
 					]
 					},
 					
 						{
 					id:"3.9",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME indicates that the steps require visual cues...",
 					data:{},
 					children: [
 						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
+						id:"3.9.1",
+						name:"Cues: \"Read,\" \"Look,\" \"Glance,\"...",
 						data:{},
-						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
-								]
+						children: [	]
+						},
+						
+						{
+						id:"3.9.2",
+						name:"<b>THEN</b>: Ask for the physical cues that they are looking for.",
+						data:{},
+						children: [	
+								{
+								id:"3.9.2.1",
+								name:"Example: \"What are you looking for?\"",
+								data:{},
+								children: [	]
+								},
+							]
 						}
 					]
 					},
 					
 						{
 					id:"3.10",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME responds with keywords like \"looking,\" \"read,\" \"find,\" \"interested,\" \"finding,\" or raises multiple \"what\" questions...",
 					data:{},
 					children: [
 						{
 						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
+						name:"<b>THEN</b>: The SME has provided criteria for choosing the options with regards to your question.",
 						data:{},
 						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
 								]
 						}
 					]
@@ -556,17 +641,25 @@ var json =
 					
 						{
 					id:"3.11",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME suggests a fixed sequence in performing a task...",
 					data:{},
 					children: [
 						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
+						id:"3.11.1",
+						name:"<b>THEN</b>: Seek an explanation for why the SME would perform the task. Ask the SME if there is any possibility of deviating from the norm and the rationale for the deviation.",
 						data:{},
 						children: [
 									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
+										id:"3.11.1.1",
+										name:"Example:\n\"Could there be a good reason not to do it this way?\"",
+										data:{},
+										children: [
+										]
+									},
+									
+									{
+										id:"3.11.1.1",
+										name:"Example:\n\"Why do you need to do it this way instead of another way?\"",
 										data:{},
 										children: [
 										]
@@ -578,23 +671,53 @@ var json =
 					
 						{
 					id:"3.12",
-					name:"<b>IF</b> the SME does not give an adequate explanation of why a certain action / decision is performed...",
+					name:"<b>IF</b>: the SME implies that they will not perform a certain action...",
 					data:{},
 					children: [
+					
 						{
-						id:"3.2.1",
-						name:"<b>THEN</b> Seek an explanation.",
-						data:{},
-						children: [
-									{
-										id:"3.2.1",
-										name:"Example:\n\"Why would you perform this action?",
-										data:{},
-										children: [
-										]
-									}
-								]
-						}
+								id:"3.12.1",
+								name:"Cue: \"I have not stopped and spent more time with it.\"",
+								data:{},
+								children: [	]
+								},
+								
+								{
+								id:"3.12.2",
+								name:"Cue: \"...Which I didn't take.\"",
+								data:{},
+								children: [	]
+								},
+								
+								{
+								id:"3.12.3",
+								name:"Cue: \"...I didn't do it.\"",
+								data:{},
+								children: [	]
+								},
+					
+							{
+							id:"3.12.4",
+							name:"<b>THEN</b>: Ask whether not performing the action is due to choice or constraint.",
+							data:{},
+							children: [
+										{
+											id:"3.12.4.1",
+											name:"Example:\n\"You haven't had the opportunity to do this action or you decide not to do it? If you decide not to do it, why?\"",
+											data:{},
+											children: [
+											]
+										},
+										
+										{
+											id:"3.12.4.2",
+											name:"Example:\n\"Why did you choose not to perform this action?\"",
+											data:{},
+											children: [
+											]
+										}
+									]
+							}
 					]
 					},
 					
@@ -737,13 +860,16 @@ var json =
                     node.eachSubnode(function(n) { count++; });
                     //assign a node color based on
                     //how many children it has
-					if (count > 10){
+					if (count < 1){
+						node.data.$color = ['#aaa']
+					}
+					else if (count >= 10){
 						node.data.$color = '#afa';
 					}
 					else{
-                    node.data.$color = ['#aaa', '#baa', '#caa', '#daa', '#eaa', '#faa', '#aca', '#ada', '#aea', '#afa'][count];    
-					}					
-                }
+                    node.data.$color = ['#eaa', '#dba', '#cca', '#bda', '#aea'][Math.floor(count/2)]
+					}	
+				}
             }
         },
         
@@ -768,7 +894,7 @@ var json =
     //compute node positions and layout
     st.compute();
     //optional: make a translation of the tree
-    st.geom.translate(new $jit.Complex(-200, 0), "current");
+    //st.geom.translate(new $jit.Complex(-200, 0), "current");
     //emulate a click on the root node.
     st.onClick(st.root);
 	st.refresh();
