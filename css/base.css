@@ -28,7 +28,7 @@ a {
 }
 
 #container {
-    width: 1500px;
+    width: 1400;
     height: 900px;
     margin:0 auto;
     position:relative;
@@ -43,7 +43,7 @@ a {
 }
 
 #left-container, #right-container {
-    width:200px;
+    width:0px;
     color:#686c70;
     text-align: left;
     overflow: auto;

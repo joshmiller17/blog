@@ -153,7 +153,15 @@ var json =
 							data:{},
 							children: [
 							]
-						}
+						},
+						
+						{
+								id:"1.8.2",
+								name:"Proceed to Task Overview.\"",
+								data:{redirect:"2"},
+								children: [
+								]
+							}
 					]
 				}
 			]
@@ -195,7 +203,7 @@ var json =
 						
 						{
 							id:"2.2.2",
-							name:"<b>NO</b>: Have you seen trends in the overview process in performing the task of interest?",
+							name:"<b>NO</b>: Do you have an overview of the process in performing the task of interest?",
 							data:{$type:"ellipse"},
 							children: [
 										{
@@ -225,15 +233,36 @@ var json =
 						]
 					},
 					
+					{
+						id:"2.3",
+						name:"Seek the goal of the task.",
+						data:{},
+						children: [
+							{
+							id:"2.3.1",
+							name:"Example: \"What can you achieve if you performed this task correctly?\"",
+							data:{},
+							children: []
+						},
+						
+						{
+							id:"2.3.2",
+							name:"Example: \"What is the goal of this task?\"",
+							data:{},
+							children: []
+						},
+						]
+					},
+					
 					
 						{
-						id:"2.3",
+						id:"2.4",
 						name:"Identify the conditions to initiate this task.",
 						data:{},
 						children: [
 						
 									{
-								id:"2.3.1",
+								id:"2.4.1",
 								name:"Example: \"What conditions must be present to start the task?\"",
 								data:{},
 								children: [
@@ -241,7 +270,7 @@ var json =
 							},
 							
 							{
-								id:"2.3.2",
+								id:"2.4.2",
 								name:"Example: \"What are the indications that you need to perform this task?\"",
 								data:{},
 								children: [
@@ -251,13 +280,13 @@ var json =
 					},
 					
 					{
-						id:"2.4",
+						id:"2.5",
 						name:"Find out the importance and uniqueness of the task",
 						data:{},
 						children: [
 						
 									{
-								id:"2.4.1",
+								id:"2.5.1",
 								name:"Example: \"What is the reason for the unique or unexpected nature of this task?\"",
 								data:{},
 								children: [
@@ -267,8 +296,8 @@ var json =
 					},
 					
 						{
-						id:"2.5",
-						name:"Go to elicit subtask step-by-step",
+						id:"2.6",
+						name:"Go to <i>elicit subtask step-by-step</i>.",
 						data:{redirect:"3"},
 						children: [
 							]
@@ -394,12 +423,12 @@ var json =
 						
 							{
 					id:"3.3.2.2",
-					name:"<b>NO</b>: the SME is able to indicate the sequence of steps...",
+					name:"<b>NO</b>: the SME is able to indicate the sequence of steps.",
 					data:{},
 					children: [
 								{
 							id:"3.3.2.2.1",
-							name:"<b>THEN</b>: Return to eliciting the subtask step-by-step.",
+							name:"<b>THEN</b>: Return to <i>eliciting the subtask step-by-step</i>.",
 							data:{redirect: "3.1"},
 							children: [
 									]
@@ -513,7 +542,7 @@ var json =
 					children: [
 						{
 						id:"3.4.3.1",
-						name:"<b>THEN</b>: Return to eliciting the subtask step-by-step.",
+						name:"<b>THEN</b>: Return to <i>eliciting the subtask step-by-step</i>.",
 						data:{redirect: "3.1"},
 						children: [
 								]
@@ -597,7 +626,7 @@ var json =
 						
 						{
 					id:"3.6.3",
-					name:"<b>IF</b>: the SME responds with keywords like \"looking,\" \"read,\" \"find,\" \"interested,\" \"finding,\" or raises multiple \"what\" questions...",
+					name:"<b>IF</b>: the SME responds with keywords like \"look,\" \"read,\" \"find,\" \"interested,\" or raises multiple \"what\" questions...",
 					data:{},
 					children: [
 						{
@@ -853,12 +882,12 @@ var json =
 					
 					{
 					id:"3.13",
-					name:"Was this the last subtask?",
+					name:"Was this the last subtask?\n\n",
 					data:{$type:"ellipse"},
 					children: [
 						{
 						id:"3.13.1",
-						name:"<b>NO</b>: Continue to the next subtask. Go to Elicit subtask step-by-step.",
+						name:"<b>NO</b>: Continue to the next subtask. Go to <i>Elicit subtask step-by-step</i>.",
 						data:{redirect:"3.1"},
 						children: [
 						]
@@ -893,7 +922,7 @@ var json =
 					{	
 						id:"3.13.3.1",
 						name:"<b>NO</b>: Seek correction, then try rephrasing again.",
-						data:{redirect:"3.13.3"},
+						data:{},
 						children: [
 						]
 						},
@@ -1285,7 +1314,7 @@ var json =
 					{	
 						id:"5.1.4.1",
 						name:"<b>NO</b>: Seek correction, then try rephrasing again.",
-						data:{redirect:"5.1.4"},
+						data:{},
 						children: [
 						]
 						},
