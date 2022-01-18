@@ -1,5 +1,5 @@
 #!/bin/bash
-htmls=("about" "tutorials" "blog" "poetry" "portfolio" "research" "credits" "allworks" "cta" "whist" "recipes/hotblood")
+htmls=("about" "tutorials" "blog" "poetry" "portfolio" "research" "credits" "allworks" "cta" "whist" "recipes/hotblood" "player-groups")
 if [ -z "$1" ]
 	then
 		aws s3 sync . s3://joshaaronmiller.com --exclude ".git*"
