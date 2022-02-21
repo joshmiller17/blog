@@ -9,6 +9,9 @@ if [ -z "$1" ]
 		done
 else
 	aws s3 cp $1.html s3://joshaaronmiller.com/$1.html
+	if ["index" -ne "$1"]
+	then
 	aws s3 mv s3://joshaaronmiller.com/$1.html s3://joshaaronmiller.com/$1
+	fi
 fi
 
