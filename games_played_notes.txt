@@ -1,0 +1,158 @@
+Braid
+https://steamcdn-a.akamaihd.net/steam/apps/26800/0000007890.600x338.jpg?t=1515716884
+Art by David Hellman
+
+TODO: rewrite this paragraph - add in all 10 puzzle principles from Schell #58, look for specific examples in Braid that highlight each
+
+To understand what makes Braid compelling, we need to understand what makes a compelling puzzle game. Probably, the answer is a combination of a story and aesthetic and good puzzles that all work well together (Schell #9). Mark Brown made an excellent video on this (https://www.youtube.com/watch?v=zsjC6fa_YBg), which I'll try to summarize here, rephrasing some of the ideas to show how they connect with other good principles of design. A good puzzle (1) has clearly defined rules (and its negative space: limitations), (2) has a clear goal, (3) has a catch - a logical contradiction preventing the assumption (or the simple answer) from working, and (4) has a revelation, an "aha" moment that demands a new perspective on the situation. In terms of the interaction design, the assumption is necessary to suggest your first action, which gives you an opening to interact with the puzzle before seeing its whole complexity (Gee Performance Before Competence), . A good puzzle is also makes use of as few elements as possible (so that your cognitive load can be best spent on only the important elements and grappling with the catch). Finally, the puzzle needs to give clear feedback on why the assumptions made won't work (for all of the obvious reasons why clear feedback is important for human-computer interaction).
+Because one of the key pleasures (Schell #20) of puzzle solving is the revelation, a good puzzle depends on its catch. The catch should use only rules that the player has internalized plus one new idea (either a new mechanic or a new dynamic). The catch also needs to be derivable from the known ruleset, otherwise it becomes "moon logic" or the player won't realize the solution was something they could do. (As an aside for puzzle designers, according to Mark, Square Enix Montreal has four heuristics for determining the difficulty of a puzzle: how many valid solutions it has, the average number of steps to reach a solution, the number of choices you can make at each step, and the complexity of the prerequisite skill tree needed to be prepared to solve the puzzle.)
+Returning to Braid, we can look at it through the composite lens we've crafted: the lens of a compelling puzzle. 
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Sun, Mar 24, 2019 at 10:10 AM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+TODO: Move Fair Use notice to bottom of intro
+
+Avalon
+Credit: Indie Boards & Cards
+https://www.boardgamequest.com/wp-content/uploads/2013/07/Avalon-Secret-Role-Cards.jpg
+
+Avalon, The Resistance, and Coup are all part of a family of social deception games, where the goal is - for the most part - to genuinely deceive your friends. And to some folks, that is a wonderful pleasure of a game, evoking all of the thrill of political intrigue at your board game table, though the question has been raised (I think on Soren Johnson's Designer Notes podcast) what these games are actually teaching as far as player skills. Do we want to make games that teach you to lie well to your friends? Is that ethical game design? Although that could be an entire discussion of itself, let's assume for now that the game concept is okay and look at how Avalon (since that's the one I have the most experience with) builds the player experience around that. First, the game introduces opposing teams (Koster #36), and notably the Evil team knows who their teammates are, but the Good team does not. So there is already asymmetric partial information. Within teams, players can have different secret roles assigned to them (Koster #10, #17) and each role gives different asymmetric partial information. Finally, these networks of partial information interact with the tools of trust and deception (Koster #25, #13), which gives us our fully prismatic lens with which to view this game: a network of people across teams sit around a table, each with varying pieces of information and reasons to keep that information secret, but the only way they can win is to share information across the table with some people and not others, and they don't know who they're supposed to share information with. It becomes a game of trying to guess, for each other player, "Can I deduce what they know based on how they're acting?" This question is dove-tailed with the same question for each player, creating a task that's nearly impossible to solve perfectly in real-time about trying to piece together everyone's behavior. Ultimately, this leads to chaos and mistrust (and often yelling). This dove-tailed network of asymmetric partial information is the core of the game - it gives a challenge to every player through content generated by the players, the content of their own behavior. For those that enjoy this style of play, it's infinitely replayable, and that's the mark of a well-designed game.
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Sat, Mar 23, 2019 at 11:01 AM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+TODO: spoiler alert at the top of the page
+
+BioShock
+https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/BioShock_cover.jpg/220px-BioShock_cover.jpg
+(Fair use, https://en.wikipedia.org/w/index.php?curid=12766032)
+
+There are many ways to analyze BioShock, but I want to look at it from the perspective of player navigation and diegetic instruction. Not just designing for navigation through a virtual space, but how does the player know where to go? Like other games, BioShock chooses to have a wayfinding arrow that constantly points the player toward their next objective. But BioShock chooses to have a diegetic explanation for this - you are enthralled to this objective, you have no choice, eventually you will go and complete this task. This serves to fill in a ludonarrative gap and ties together the quest-giving with the UI display for the quest. (On top of that, the level design helps the player mentally map the world: many lighting and framing choices were made to direct the player's gaze, and each area is aesthetically distinct to help the player build their mental map.) Diegetic instruction isn't just used for navigation, it's also used to introduce the player's plasmids (the spells/abilities of the game). When introduced to a new plasmid, a short video advertisement is played for the plasmid persuading the residents of Rapture to purchase it, which has the "side" effect of teaching the player how to use the plasmid.
+
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Fri, Mar 22, 2019 at 9:06 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+The Binding of Isaac
+Credit: Edmund McMillen
+https://steamcdn-a.akamaihd.net/steam/apps/250900/ss_25a4a446a433218d41a7e87e35b60c297e68e7a4.600x338.jpg?t=1542143733
+
+The Binding of Isaac is a roguelike shooter that works because everything fits together toward a cohesive, unique, and now iconic style. The combination of the religious story, bubbly art style, and close-quarters shooter gives The Binding of Isaac something of an idiosyncracy, where playing the game feels unlike playing any other game - a combination of fear (of the unknown, of the creepy monsters) and adrenaline. Certainly, this helped it build its brand as a game, but I think the sticking power comes from its extremely interactive, systemic design. The game makes an implicit promise to the player that every upgrade you can get interacts with every other upgrade, and its challenges the player to find "exploits" and synergies, like most good roguelikes do. This also lends itself to curiosity: "I wonder what will happen if I get this upgrade and this other one." This system, combined with multiple risk/reward mechanics, such as paying health for coins, keeps the player often feeling like a glass cannon, which only furthers the thrill of close-quarters combat, weaving in and between enemies and hazards to save precious health resources.
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Thu, Mar 21, 2019 at 3:59 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+Apples to Apples
+(By Source, Fair use, https://en.wikipedia.org/w/index.php?curid=22084173)
+https://en.wikipedia.org/wiki/Apples_to_Apples#/media/File:Apples_to_apples_cards.jpg
+
+Apples to Apples was the first [citation needed] game in the "appleslike"<https://youtu.be/Lx7BWayWu08?t=82> genre of social comedy and judgment, from which other games like Cards Against Humanity, The T-Shirt Game, Snake Oil, and Say Anything evolved. This family of games is built on the comedy of inside jokes, absurdism, and uncommon associations. The beauty of this design is letting the players do the comedic work - or, really, letting the mechanics do them. By shuffling random concepts to each player, the game invites them to make strange associations between the concepts and their own experiences and the experiences of the social group. This creates a near-infinite well of content personalized to the players. Stephen Dewey, creator of the tragic horror tabletop RPG Ten Candles, advocates for mechanics as the "heavy lifters" of the emotional experience of a game: by having the mechanics reliably create an experience arc, the designer doesn't need to worry about how a player's first experience will be (contrast this with, for example, Dungeons & Dragons, in which the first-time experience is strongly influenced by the Dungeon Master). In this way, the simple card-based judgment mechanics of Apples to Apples guarantees a comedic experience for nearly all social groups - even though most cards don't carry inherent comedic value (there's a lot to unpack there about the art and science of improvisational comedy).
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Wed, Mar 20, 2019 at 8:55 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+The Beginner's Guide
+Credit: Everything Unlimited Ltd.
+https://steamcdn-a.akamaihd.net/steam/apps/303210/ss_2821c368d938362b74843cd1fff2e046d1633bee.600x338.jpg?t=1456770083
+
+The Beginner's Guide is an 80 hour experience: 90 minutes to play the game, and 78 and a half hours trying to understand what you just played. If you haven't played it yet, go play it and then come back - it's one of those. Don't worry, I'll wait. Ready? Okay. The value of The Beginner's Guide, to me, is that it's part of an early conversation about games as an art form. The story has a few interpretations, and you can read into each of them for several hundred layers deep if you want to, but every interpretation will only raise more questions unless you decide you're satisfied with making one or more assumptions. I won't be able to do the argument justice in this space, so I recommend the criticisms of Errant Signal <https://www.youtube.com/watch?v=vAbh28j11RQ> and Innuendo Studios <https://www.youtube.com/watch?v=4N6y6LEwsKc> who both put in some good work unpacking what Davey Wreden has presented us with. But as great as this narrative is as a gift to the game development community, the scope of this page is to talk about game design. So what's there to learn about the design of the game? At most levels, this is a game driven by curiosity (Schell #6). The player is invited to be curious about Coda, curious about his games and who he is and why Davey Wreden is giving you his actual email address during the opening of this game. What are the easter eggs Coda put in? What does all of this mean? In most games, I think it's fair to say, curiosity is often used only during the opening, the hook, the initial engagement, as the player investigates what this world is that we've built for them. But here is a game for which curiosity is the main force forward, and it's not a mystery (in the common sense) or a typical narrative framework which naturally invites curiosity. Wreden has crafted something special here - a cohesive experience that, despite being linear, feels like the player is choosing to walk forward by their own curiosity.
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Tue, Mar 19, 2019 at 3:02 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+Battlefield (series)
+Credit: Dice, EA
+https://media.contentapi.ea.com/content/dam/bf/images/2019/01/bfv-chapter2-squad.png.adapt.crop16x9.818p.png
+
+After I gave up on Call of Duty's unwillingness to change, but before I felt genre fatigue of first person shooters' overall unwillingness to change, I played a lot of Battlefield. What this series offered that CoD didn't was a claim that squad strategy mattered and tactical decisions like suppressing fire were valuable - that you needed to work together, not just run around independently vying for the highest Kill/Death ratio. And, for the most part, that was my experience with the game. On top of scratching a tactical itch, Battlefield had an enormous amount of "juice," taking many philosophies described in Steve Swink's "Game Feel" (2008) (see also Schell #64) and masterfully polishing the experience they wanted to give to the players: that being on a battlefield was action-packed with chaos and noise, and you could die at any moment if you were out in the open. There's a lot to be learned from how Battlefield designed their soundscape to drive home the experience they were designing for. It's clear from the design that Dice and EA were thinking about the essential experience (Schell #2). Ultimately, the most fun I had playing this game was when I and my friend(s) worked together to capture some small objective in a battle that was larger than any of us, but by teaming up we could change the tides of one small piece of it, one building at a time. The class roles and vehicles (for the most part) support this play style, and ultimately I think, the whole game centers around this notion, although there are some elements, like single-person planes, which can detract from the experience.
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Mon, Mar 18, 2019 at 8:17 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+TODO: take out some of the Schell mentions in 7 days to die, too many citations.
+
+Advanced D&D 1st edition
+Credit: D.A. Trampier
+https://upload.wikimedia.org/wikipedia/en/0/09/PlayersHandbook8Cover.jpg
+
+I had the chance to play a campaign with this system back in college, which was followed by a run through the Tomb of Horrors. If memory serves, we did end up surviving and beating the (notoriously difficult) tomb on our first try, but I personally did not survive the final boss fight, my soul having been captured inside a gem. Anyway, this historic game was as unnecessarily complicated as time remembers it to be. In our campaign, I played a dwarf cleric, which was technically against the rules, but our Dungeon Master (DM) allowed it in an attempt to disregard the game's racist and sexist roots. In a way, this speaks to how the designers of that time viewed the player (Schell #19), and the limited audience they were designing for. This scope afforded them more complexity in the rules, but not in a way that was accessible, or really that even added to the core experience. At least for my experiences with the game, they were only ever hindered by the complicated tables and ranges of spells, and it lent itself more toward lawyering the rules for your own benefit than actually enjoying the experience. Playing AD&D 1st ed. is a useful lens to see how far we've come in tabletop design, and what more we can still do. It's important to remember the racist and sexist roots our gaming evolved from so that we remember to never make that mistake again and continue the pursuit toward designing an accessible, inclusive space.
+
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Mon, Mar 18, 2019 at 10:56 AM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+Edit: Gee *principle* should be Gee: principle
+Note to self: Icons can do parallax, see for example: https://www.supergiantgames.com/games/bastion/
+
+Bastion
+Credit: Supergiant Games
+https://www.supergiantgames.com/webhook-uploads/1408121568006_Bastion_092010_00021.jpg
+
+Bastion is a fantastic game for many reasons, but what stuck out to me (and other designers (link: https://www.youtube.com/watch?v=elhnZqEZZAs)) was its polished ludonarrative consonance - nearly every aspect of the game reinforces the player's narrative and reacts to the player's choices diegetically. The story of the game is told through the voice-over of a narrator who has hundreds of lines saved up for anything the player could think to do. Compare this to The Stanely Parable, where the narrator first says what should happen, and then the player can choose whether to obey or not. In Bastion, the player acts, and the narrator then describes the story as if that were the truth all along. When I played, this gave me a sense of narrative control even when I wasn't actively making choices to the macro-narrative, since the game was acknowledging even small choices, like whether I rolled into a stack of crates or just kept walking. The player's narrative is further bolstered by several meaningful choices on what gear to use and how to customize them, since each equipment piece and upgrade plays fundamentally differently than the others. It feels like Supergiant tried as much as possible to avoid "numbers go up" for the sake of numbers go up, and instead focused on using those shifts in stats to create a new way to play the game. For example, the Fang Repeater's fifth upgrade either makes the weapon homing (target-seeking) or makes the bolts ricochet off surfaces - qualitative differences in play rather than quantitative.
+
+
+
+--
+Josh Miller
+PhD Student
+College of Computer and Information Science
+Northeastern University
+Cell: (339) 707-7567
+
+
+On Sun, Mar 17, 2019 at 12:09 PM Joshua Miller <miller.josh@husky.neu.edu> wrote:
+Banjo-Kazooie
+Credit: Nintendo
+https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_7/SI_N64_BanjoKazooie_image1600w.jpg
+
+Banjo-Kazooie was one of the first games I ever played, which presents a curious opportunity for design analysis: after nearly two decades, what stuck with me about its design? For one, I remember being absolutely terrified of drowning in Clanker's Cavern, to the point where I tried to get my dad to play that part for me. Of course, since he didn't know how to play games well, I eventually had to do it on my own and work through my fear. There was probably some kind of teaching moment there, but I don't think it was by design - it's unlikely that the drowning mechanic was meant to teach young kids about overcoming their fears of a breathless, painful death. I remember it being a collectathon platformer, which made the game very difficult for me, since 1) I didn't have much experience with platformers (or anything at that time in my life), but more importantly 2) I struggled to make a mental model of the map, my objectives, and what I needed to return to. Later in life, I would develop that skill and be able to navigate perfectly in most games, but to a younger me, that left room for confusion and frustration.
+I remember some specific puzzles, like the sandcastle in Treasure Trove Cove. After looking it up again to refresh my memory, it's clear that the answer to the riddle is "Banjo-Kazooie," which is written on the wall. Maybe I didn't notice that because I wasn't using my camera to look around, but I remember staring at those letters and being baffled as to what the answer could be. In fact, after watching some of the gameplay now, I can easily build a clear mental model of the mechanics and how to solve each puzzle and navigate the world. But to a younger me, this was not at all as clear-cut. Thinking back on my experiences with Banjo-Kazooie gives me a useful lens to see puzzle design (even for elements of a game that would not traditionally be considered a puzzle) - if a younger me were to play this game, what would I struggle with? What is the game asking me to accomplish in terms of physical inputs (like platforming), spatial navigation, and logical reasoning? What does the player need to understand to even realize what's being asked of them? And then what does the player need to understand to be able to accomplish the task? Overall, I must have enjoyed the game immensely, becaue I remember playing it so much.
