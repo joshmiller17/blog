@@ -326,3 +326,63 @@ img { /* scale images to screen */
     display: flex;
     margin-top: -1em;
 }
+
+.carousel-container { position: relative; overflow: hidden; max-width: 100%; margin: auto; padding: 2rem 1rem; }
+.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel-slide { min-width: 100%; display: flex; align-items: center; justify-content: center; gap: 5rem; flex-wrap: wrap; }
+.carousel-slide:nth-child(even) { flex-direction: row-reverse; }
+.image img { width: 100%; border-radius: 8px; }
+@media (max-width: 768px) {
+.carousel-slide { flex-direction: column !important; text-align: center; }
+}
+
+.carousel-slide .text {
+  flex: 1.3 1 300px; /* grow more if space is available */
+  min-width: 250px;
+  max-width: 1000px;
+}
+
+.carousel-slide .image {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+  
+  .image iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-buttons button {
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  min-width:300px;
+  font-weight: bold;
+}
+
+.carousel-buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.carousel-buttons button:active {
+  transform: scale(0.95);
+}
